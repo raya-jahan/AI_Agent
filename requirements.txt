@@ -6,7 +6,7 @@ markdownify
 git+https://github.com/huggingface/smolagents.git
 requests
 duckduckgo_search
-pandas==2.0.3
+pandas
 gradio
 smolagents[gradio]
 
