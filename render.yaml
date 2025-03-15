@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ai-agent-service
+    env: python
+    plan: free  # You can upgrade later
+    buildCommand: ""
+    startCommand: "python app.py"
+    envVars:
+      - key: HF_TOKEN
+        value: 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
