@@ -3,6 +3,7 @@ import datetime
 import requests
 import pytz
 import yaml
+import os
 from tools.final_answer import FinalAnswerTool
 from tools.price_comparison_tool import PriceComparisonTool
 
@@ -167,4 +168,8 @@ agent = CodeAgent(
 )
 
 
-GradioUI(agent).launch()
+
+port = int(os.environ.get('PORT', 7860))  # Use Render's dynamic port or 7860 for local
+GradioUI(agent).launch(server_name="0.0.0.0", server_port=port)
+
+# GradioUI(agent).launch()
