@@ -5,7 +5,9 @@ services:
     plan: free
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python app.py"
-    envVars:
-      - key: HF_TOKEN
-        sync: false  # <--- This tells Render: "Use value set in Dashboard, don't expose it here"
+    # envVars:
+    #   - key: HF_TOKEN
+    #     sync: false  # <--- This tells Render: "Use value set in Dashboard, don't expose it here"
+
+
 
