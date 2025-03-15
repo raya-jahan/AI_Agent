@@ -7,4 +7,7 @@ git+https://github.com/huggingface/smolagents.git
 requests
 duckduckgo_search
 pandas==2.0.3
+gradio
+smolagents[gradio]
+
 
